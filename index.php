@@ -18,7 +18,7 @@ trait Calculator{
       }
       
       public function sqr($a){
-        return sqrt($numero);
+        return sqrt($a);
       }
 
 }
@@ -45,7 +45,8 @@ class Rettangolo{
     }
 
     public function diagonale(){
-        echo sqrt(pow($this->base, 2) + pow($this->altezza, 2));
+        $powerSum = (pow($this->base, 2) + pow($this->altezza, 2));
+        echo $this->sqr($powerSum);
     }
 
 
